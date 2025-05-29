@@ -1,0 +1,9 @@
+
+Manual and automated test cases for billing flow verification.
+
+## Structure
+- `test-cases/` – Manual test steps
+- `automation/` – Selenium scripts
+- `results/` – Test run output
+
+
