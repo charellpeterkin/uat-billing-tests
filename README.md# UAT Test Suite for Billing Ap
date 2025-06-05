@@ -1,9 +1,61 @@
+![banner](./githubBanner.png)
 
-Manual and automated test cases for billing flow verification.
+# 🧪 UAT Billing Test Automation Suite
 
-## Structure
-- `test-cases/` – Manual test steps
-- `automation/` – Selenium scripts
-- `results/` – Test run output
+This project simulates a User Acceptance Testing (UAT) suite for a billing web application. It automates verification of routing logic for different client types (`retail`, `enterprise`, `gov`) and includes a login simulation using Selenium and Python.
+
+The goal is to demonstrate how a QA Engineer can build, structure, and run end-to-end automated tests, complete with mock login flow and routing assertions.
+
+## 📁 Folder Structure
+
+- `automation/` – Python Selenium scripts for test automation
+- `mock-app/` – Lightweight Flask app that simulates a real billing app
+- `test-cases/` – Manual test documentation
+- `results/` – Logs or output files from test runs
+
+- Python 3.11+
+- Selenium WebDriver
+- Flask (for the mock app)
+- Google Chrome + ChromeDriver
+- Git
+
+1. Clone the repo
+   ```bash
+   git clone https://github.com/charellpeterkin/uat-billing-tests.git
+   cd uat-billing-tests
+
+2. Setup and activate virtual environment
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+
+3. Start the mock billing app
+   cd mock-app
+   flask run
+
+4. Open a second terminal and run the test
+   cd automation
+   python3 test_invoice_routing.py
+
+
+---
+
+### 🧪 Sample Test Output
+
+```md
+✅ Login form filled successfully  
+✅ Retail invoice routing passed  
+✅ Enterprise invoice routing passed  
+✅ Gov invoice routing passed  
+📜 Test complete. Browser closed.
+
+
+**Charell Peterkin**  
+QA Engineer | Technologist | Mom of two | Passionate about tech accessibility  
+[GitHub](https://github.com/charellpeterkin) | [LinkedIn](https://www.linkedin.com/in/charellpeterkin)
+
+
+
+
 
 
